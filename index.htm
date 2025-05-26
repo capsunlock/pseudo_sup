@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Supermarket" />
+    <meta name="author" content="CapsUnlock" />
+    <meta
+      name="description"
+      content="Official website for ***** Supermarket in *****, *****, *****, developed by CapsUnlock. "
+    />
+    <title>***** Supermarket</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>***** Supermarket</h1>
+    </header>
+
+    <nav>
+      <a
+        onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })"
+        >About</a
+      >
+      <a
+        onclick="document.getElementById('departments').scrollIntoView({ behavior: 'smooth' })"
+        >Departments</a
+      >
+      <a
+        onclick="document.getElementById('specials').scrollIntoView({ behavior: 'smooth' })"
+        >Weekly Specials</a
+      >
+      <a
+        onclick="document.getElementById('order').scrollIntoView({ behavior: 'smooth' })"
+        >Shop & Order</a
+      >
+      <a
+        onclick="document.getElementById('newsletter').scrollIntoView({ behavior: 'smooth' })"
+        >Contact Us</a
+      >
+    </nav>
+
+    <div class="hero">
+      <h1>Fresh, Quality Groceries</h1>
+      <p>Weekly deals Available</p>
+      <button
+        onclick="document.getElementById('order').scrollIntoView({ behavior: 'smooth' })"
+      >
+        Shop Now
+      </button>
+    </div>
+
+    <section id="about" class="about">
+      <div>
+        <h2>About Us</h2>
+        <p>
+          ***** Supermarket has been proudly serving our community since 1980.
+          We are commited to offering the freshest produce, quality products,
+          and exceptional customer service.
+        </p>
+      </div>
+      <img src="images/employeesmiling.jpg" alt="smiling employee" />
+    </section>
+
+    <section id="departments" class="departments">
+      <h2>Departments</h2>
+      <ul>
+        <li><i class="fas fa-leaf"></i>Organic</li>
+        <li><i></i>Fresh Produce</li>
+        <li><i></i>Dairy</li>
+        <li><i></i>Meats</li>
+        <li><i></i>Bakery</li>
+        <li><i></i>Snacks</li>
+        <li><i></i>Household Essentials</li>
+      </ul>
+    </section>
+
+    <section id="specials" class="specials">
+      <h2>Weekly Specials</h2>
+      <div class="items">
+        <div class="item">
+          <img src="" alt="Item1" />
+          <p>10% OFF Original Price</p>
+        </div>
+        <div class="item">
+          <img src="" alt="Item2" />
+          <p>####/lb Navel Oranges</p>
+        </div>
+        <div class="item">
+          <img src="" alt="Item3" />
+          <p>####/lb Best Roast</p>
+        </div>
+        <div class="item">
+          <img src="" alt="Item4" />
+          <p>####/lb Best Roast</p>
+        </div>
+        <div class="item">
+          <img src="" alt="Item5" />
+          <p>20% OFF Original Price</p>
+        </div>
+        <div class="item">
+          <img src="" alt="Item6" />
+          <p>15% OFF Original Price</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Online Ordering -->
+    <section id="order" class="order">
+      <h2>Shop & Order</h2>
+      <p>Browse popular items and place an order for pickup or delivery</p>
+      <div class="iframe-container">
+        <iframe
+          src="shop.html"
+          title="***** Supermarket online store"
+          width="100%"
+          height="600"
+          style="border: 1px solid #ccc; border-radius: 8px"
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <!-- <div class="order-items">
+        <div class="order-card">
+          <img src="" alt="" />
+          <h3>Whole Milk</h3>
+          <p>$3.49</p>
+          <button onclick="addToCart('Whole Milk')">Add to Cart</button>
+        </div>
+        <div class="order-card">
+          <img src="" alt="" />
+          <h3>Bananas</h3>
+          <p>$0.59/lb</p>
+          <button onclick="addToCart('Bananas')">Add to Cart</button>
+        </div>
+        <div class="order-card">
+          <img src="" alt="" />
+          <h3>Fresh Bread</h3>
+          <p>$2.99</p>
+          <button onclick="addToCart('Fresh Bread')">Add to Cart</button>
+        </div>
+      </div> -->
+      <!-- <button class="more-ordering">See More</button> -->
+    </section>
+
+    <section class="newsletter" id="newsletter">
+      <h2>Newsletter Signup</h2>
+      <form id="newsletterForm">
+        <input
+          type="email"
+          id="emailInput"
+          placeholder="Email Address"
+          required
+        />
+        <button type="submit">Subscribe</button>
+        <small id="emailError" class="error-text"></small>
+      </form>
+      <p>Get weekly deals and updates in your inbox.</p>
+      <div id="toast" class="toast hidden">Thanks for subscribing</div>
+    </section>
+
+    <section class="rights">
+      &copy; 2025 ***** Supermarket. All rights reserved.
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
