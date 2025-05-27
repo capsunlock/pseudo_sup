@@ -182,6 +182,9 @@ section {
   padding-bottom: 56.25%; /* 16.9 aspect ratio */
   height: 0;
   overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 .iframe-container iframe {
   position: absolute;
@@ -191,6 +194,25 @@ section {
   height: 100%;
   border-radius: 10px;
   border: none;
+  pointer-events: none;
+  filter: brightness(0.6);
+}
+.iframe-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text);
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--bg);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  z-index: 2;
+  pointer-events: none;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .card, .specials, .item{
