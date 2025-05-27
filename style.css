@@ -144,6 +144,8 @@ section {
   vertical-align: middle;
 }
 .specials .items {
+  color: var(--text);
+  background-color: var(--bg);
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -156,7 +158,8 @@ section {
 .specials .item {
   flex: 0 0 auto;
   width: 200px;
-  background-color: #f1f8e9;
+  background-color: var(--bg);
+  color: var(--text);
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
