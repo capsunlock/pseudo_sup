@@ -111,45 +111,20 @@
     </section>
 
     <!-- Online Ordering -->
-    <section id="order" class="order">
-      <h2>Shop & Order</h2>
-      <p>Browse popular items and place an order for pickup or delivery</p>
-      <div
-        class="iframe-container"
-        onclick="window.open('ACTUAL MAIN PAGE URL', '_blank')"
-      >
-        <div class="iframe-overlay">Tap to Order</div>
-        <iframe
-          src="main/shop.html"
-          title="***** Supermarket online store"
-          width="100%"
-          height="600"
-          style="border: 1px solid #ccc; border-radius: 8px"
-          loading="lazy"
-        ></iframe>
+    <section class="shop-preview-section">
+      <h2>Visit Our Online Supermarket</h2>
+      <div class="shop-preview-container">
+        <a href="shop.html" target="_blank" class="shop-overlay-link">
+          <iframe
+            src="shop.html"
+            class="shop-iframe"
+            title="Shop Preview"
+          ></iframe>
+          <div class="shop-overlay">
+            <p>Click to Enter Full Shop</p>
+          </div>
+        </a>
       </div>
-
-      <!-- <div class="order-items">
-        <div class="order-card">
-          <img src="" alt="" />
-          <h3>Whole Milk</h3>
-          <p>$3.49</p>
-          <button onclick="addToCart('Whole Milk')">Add to Cart</button>
-        </div>
-        <div class="order-card">
-          <img src="" alt="" />
-          <h3>Bananas</h3>
-          <p>$0.59/lb</p>
-          <button onclick="addToCart('Bananas')">Add to Cart</button>
-        </div>
-        <div class="order-card">
-          <img src="" alt="" />
-          <h3>Fresh Bread</h3>
-          <p>$2.99</p>
-          <button onclick="addToCart('Fresh Bread')">Add to Cart</button>
-        </div>
-      </div> -->
-      <!-- <button class="more-ordering">See More</button> -->
     </section>
 
     <section class="newsletter" id="newsletter">
