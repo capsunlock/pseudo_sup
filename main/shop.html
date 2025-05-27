@@ -6,15 +6,16 @@
     <title>***** Supermarket</title>
     <link rel="stylesheet" href="main.css" />
   </head>
-  <header>
-    <h1>***** Supermarket</h1>
-    <input type="text" id="search" placeholder="Search products..." />
-    <button id="cart-toggle">🛒Cart(<span id="cart-count">0</span>)</button>
-  </header>
   <body>
+    <header>
+      <h1>***** Supermarket</h1>
+      <input type="text" id="search" placeholder="Search products..." />
+      <button id="cart-toggle">🛒 Cart (<span id="cart-count">0</span>)</button>
+    </header>
+
     <main>
       <section class="filters">
-        <select name="" id="category-filter">
+        <select id="category-filter">
           <option value="all">All Categories</option>
           <option value="produce">Fresh products</option>
           <option value="dairy">Dairy</option>
@@ -25,7 +26,6 @@
       </section>
 
       <section id="products" class="products-grid">
-        products
         <div class="product-card">
           <h3>Bronccoli</h3>
           <p>$1.99</p>
@@ -118,6 +118,7 @@
       <button id="checkout-btn">Checkout</button>
       <button id="close-cart">Close</button>
     </aside>
+
     <script src="main.js"></script>
   </body>
 </html>
